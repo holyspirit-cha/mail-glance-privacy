@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>메일 한눈에 개인정보처리방침</title>
+<style>
+body{font-family:system-ui,-apple-system,"Malgun Gothic",sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.7;color:#222;background:#fff}
+h1{font-size:1.5em}h2{font-size:1.1em;margin-top:1.6em}
+table{border-collapse:collapse;width:100%;font-size:.95em}td,th{border:1px solid #ccc;padding:6px 8px;text-align:left;vertical-align:top}
+code{background:#f3f4f6;padding:1px 4px;border-radius:3px}
+</style>
+</head>
+<body>
+<h1>메일 한눈에 개인정보처리방침</h1>
+<p>시행일: 2026년 9월 27일</p>
+
+<h2>1. 처리하는 정보</h2>
+<p>본 확장 프로그램은 사용자가 지메일 또는 네이버 메일 목록에서 메일 행에 마우스를 올렸을 때, 그 메일의 내용을 AI로 요약해 카드로 보여 주는 기능만 수행합니다.</p>
+<table>
+<tr><th>정보</th><th>언제</th><th>어디로</th></tr>
+<tr><td>메일 제목·발신자·본문(최근 4,000자)·첨부파일(최대 3개, 각 3MB)</td><td>사용자가 메일 행에 마우스를 올렸을 때만</td><td>Anthropic API(api.anthropic.com) — 사용자 본인이 발급받아 입력한 API 키로 요약 생성</td></tr>
+<tr><td>일정 제목·날짜·요약·메일 첨부파일</td><td>사용자가 「캘린더에 등록」 버튼을 눌렀을 때만</td><td>사용자 본인의 Google 캘린더·Google 드라이브</td></tr>
+<tr><td>Anthropic API 키, 설정값(모델, 제외 도메인)</td><td>설정 화면에서 저장할 때</td><td>사용자 브라우저 내부(chrome.storage.local)에만 저장</td></tr>
+<tr><td>요약 결과</td><td>요약 직후</td><td>브라우저 세션 저장소(브라우저를 닫으면 삭제)</td></tr>
+</table>
+
+<h2>2. 수집·저장·전송 — 개발자가 받는 정보는 없습니다</h2>
+<p>이 확장 프로그램에는 개발자 서버가 없습니다. 메일 내용·API 키·일정 정보는 개발자에게 전송되지 않으며, 광고·분석·추적 도구를 쓰지 않습니다. 사용자 데이터를 판매하거나 제3자에게 제공하지 않으며, 확장 프로그램의 단일 목적 외에는 사용하지 않습니다.</p>
+
+<h2>3. 메일 본문 읽기</h2>
+<p>지메일 본문은 사용자가 이미 로그인한 브라우저 안에서 지메일 인쇄보기 화면을 같은 출처로 읽어 옵니다. Gmail API 는 사용하지 않습니다. 네이버 메일은 목록 화면에 표시되는 제목·발신자·미리보기만 사용합니다.</p>
+
+<h2>4. Google 사용자 데이터</h2>
+<p>구글 로그인은 사용자가 「캘린더에 등록」을 처음 눌렀을 때만 요청하며, 권한은 <code>calendar.events</code>(일정 생성)와 <code>drive.file</code>(이 확장이 올린 파일만 접근) 두 가지뿐입니다. 받은 데이터는 사용자가 요청한 일정 생성에만 쓰며, Google API 서비스 사용자 데이터 정책(제한적 사용 요건 포함)을 준수합니다. 액세스 토큰은 브라우저 세션 저장소에만 보관되며 브라우저를 닫으면 삭제됩니다.</p>
+
+<h2>5. 제3자 처리(AI 요약)</h2>
+<p>요약을 위해 메일 내용이 Anthropic PBC 의 API 로 전송됩니다. 처리는 Anthropic 의 이용약관·개인정보처리방침을 따르며, 계약 당사자는 API 키를 발급받은 사용자 본인입니다. 설정의 「제외 도메인」에 적은 발신자의 메일은 전송하지 않습니다.</p>
+
+<h2>6. 삭제</h2>
+<p>확장 프로그램을 제거하면 브라우저에 저장된 API 키·설정·캐시가 모두 삭제됩니다. 등록된 일정·드라이브 파일은 사용자가 Google 캘린더·드라이브에서 직접 삭제할 수 있습니다.</p>
+
+<h2>7. 문의</h2>
+<p>big7star@big7star.com</p>
+</body>
+</html>
