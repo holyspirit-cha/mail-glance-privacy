@@ -1,19 +1,58 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>메일 한눈에 개인정보처리방침</title>
+<title>Mail Glance Privacy Policy</title>
 <style>
 body{font-family:system-ui,-apple-system,"Malgun Gothic",sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.7;color:#222;background:#fff}
 h1{font-size:1.5em}h2{font-size:1.1em;margin-top:1.6em}
 table{border-collapse:collapse;width:100%;font-size:.95em}td,th{border:1px solid #ccc;padding:6px 8px;text-align:left;vertical-align:top}
 code{background:#f3f4f6;padding:1px 4px;border-radius:3px}
+nav{margin-bottom:1em}hr{margin:3em 0;border:0;border-top:1px solid #ddd}
 </style>
 </head>
 <body>
+<nav><a href="#en">English</a> · <a href="#ko">한국어</a></nav>
+
+<section id="en">
+<h1>Mail Glance Privacy Policy</h1>
+<p>Effective date: September 28, 2026</p>
+
+<h2>1. Information we handle</h2>
+<p>Mail Glance does one thing. When you hover over an email in your Gmail or Naver Mail inbox, it summarizes that email with AI and shows the result in a card.</p>
+<table>
+<tr><th>Information</th><th>When</th><th>Where it goes</th></tr>
+<tr><td>Email subject, sender, body (last 4,000 characters) and attachments (up to 3, 3 MB each)</td><td>Only when you hover over an email</td><td>The Anthropic API (api.anthropic.com), using the API key you obtained and entered yourself</td></tr>
+<tr><td>Event title, date, summary and the email's attachments</td><td>Only when you click "Add to Calendar"</td><td>Your own Google Calendar and Google Drive</td></tr>
+<tr><td>Your Anthropic API key and settings (model, excluded domains)</td><td>When you save them on the settings page</td><td>Stored only inside your browser (chrome.storage.local)</td></tr>
+<tr><td>Summary results</td><td>Right after a summary is made</td><td>Browser session storage, deleted when you close the browser</td></tr>
+</table>
+
+<h2>2. The developer receives nothing</h2>
+<p>This extension has no developer server. Email content, API keys and event details are never sent to the developer. We use no advertising, analytics or tracking tools. We do not sell user data, share it with third parties, or use it for anything other than the extension's single purpose.</p>
+
+<h2>3. Reading email content</h2>
+<p>For Gmail, the extension reads the email's print view from the same origin inside the browser where you are already signed in. It does not use the Gmail API. For Naver Mail, it uses only the subject, sender and preview shown in the inbox list.</p>
+
+<h2>4. Google user data</h2>
+<p>Google sign-in is requested only the first time you click "Add to Calendar". The extension asks for two scopes: <code>calendar.events</code> to create events, and <code>drive.file</code> to access only the files this extension uploads. Data received from Google is used only to create the event you asked for. Mail Glance's use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. The access token is kept only in browser session storage and is deleted when you close the browser.</p>
+
+<h2>5. Third-party processing (AI summaries)</h2>
+<p>To make a summary, email content is sent to the API of Anthropic PBC. That processing is governed by Anthropic's terms and privacy policy, and the contracting party is you, the owner of the API key. Emails from senders listed under "Excluded domains" in the settings are never sent.</p>
+
+<h2>6. Deletion</h2>
+<p>Removing the extension deletes the API key, settings and cache stored in your browser. You can delete events and Drive files yourself in Google Calendar and Google Drive.</p>
+
+<h2>7. Contact</h2>
+<p>big7star@big7star.com</p>
+</section>
+
+<hr>
+
+<section id="ko" lang="ko">
 <h1>메일 한눈에 개인정보처리방침</h1>
-<p>시행일: 2026년 9월 27일</p>
+<p>시행일: 2026년 9월 28일</p>
 
 <h2>1. 처리하는 정보</h2>
 <p>본 확장 프로그램은 사용자가 지메일 또는 네이버 메일 목록에서 메일 행에 마우스를 올렸을 때, 그 메일의 내용을 AI로 요약해 카드로 보여 주는 기능만 수행합니다.</p>
@@ -42,5 +81,6 @@ code{background:#f3f4f6;padding:1px 4px;border-radius:3px}
 
 <h2>7. 문의</h2>
 <p>big7star@big7star.com</p>
+</section>
 </body>
 </html>
